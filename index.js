@@ -30,7 +30,7 @@ const port = 5000;
 app.get('/', async (req, res) => {
   try {
     
-    const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=48230,US&appid=${apiKey}`);
+    const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=YourZipCodeHere,YourCountryHere&appid=${apiKey}`);
     const weatherData = response.data;
 
     // Check if it's cloudy
